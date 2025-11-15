@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { HASH_COMPLEXITY } from '../../keys/keys.js';
+import { HASH_COMPLEXITY } from '../keys/keys.js';
 
 export const generateHash = async (password) => {
     const passwordOriginal = password;

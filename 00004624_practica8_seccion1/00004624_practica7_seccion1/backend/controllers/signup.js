@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { db } from '../data/connection.js';
 import { generateHash } from '../hashes/index.js';
-import { JWT_SECRET } from '../../keys/keys.js';
+import { JWT_SECRET } from '../keys/keys.js';
 
 export const SignUp = async (req, res) => {
     const { name, email, password } = req.body;
